@@ -5,14 +5,14 @@ function initMap() {
         zoom: 8, // Set the initial zoom level
     });
 
-    // Example: Adding a marker to the map
+    // Adding a marker to the map
     const marker = new google.maps.Marker({
         position: { lat: 0, lng: 0 }, // Set the marker's position
         map: map,
         title: "Green Space",
     });
 
-    // Example: Adding an info window to the marker
+    // Adding an info window to the marker
     const infowindow = new google.maps.InfoWindow({
         content: "This is a green space.",
     });
@@ -21,7 +21,6 @@ function initMap() {
         infowindow.open(map, marker);
     });
 
-    // Handle more Google Maps features and data integration here
 }
 
 
@@ -105,12 +104,12 @@ function initMap() {
         const circle = new google.maps.Circle({
             map: map,
             center: map.getCenter(),
-            radius: 500, // 500 meters
-            fillColor: '#00FF00', // Fill color
-            fillOpacity: 0.2, // Fill opacity
-            strokeColor: '#00FF00', // Stroke color
-            strokeOpacity: 0.8, // Stroke opacity
-            strokeWeight: 2, // Stroke weight
+            radius: 500, 
+            fillColor: '#00FF00', 
+            fillOpacity: 0.2, 
+            strokeColor: '#00FF00', 
+            strokeOpacity: 0.8, 
+            strokeWeight: 2, 
         });
     });
 }
